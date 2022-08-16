@@ -1,0 +1,27 @@
+xml version=1.0 encoding=utf-8
+androidx.constraintlayout.widget.ConstraintLayout xmlnsandroid=httpschemas.android.comapkresandroid
+    xmlnsapp=httpschemas.android.comapkres-auto
+    xmlnstools=httpschemas.android.comtools
+    androidlayout_width=match_parent
+    androidlayout_height=match_parent
+    androidbackground=#FFFFFF
+    toolscontext=.MainActivity
+
+
+    Button
+        androidid=@+idemail
+        androidlayout_width=150dp
+        androidlayout_height=40dp
+        androidbackground=#03A9F4
+        androidtext=Email
+        androidtextColor=#FFFFFF
+        androidvisibility=visible
+        applayout_constraintBottom_toBottomOf=parent
+        applayout_constraintEnd_toEndOf=parent
+        applayout_constraintStart_toStartOf=parent
+        applayout_constraintTop_toTopOf=parent
+        applayout_constraintVertical_bias=0.499
+        toolsvisibility=visible 
+
+
+androidx.constraintlayout.widget.ConstraintLayout

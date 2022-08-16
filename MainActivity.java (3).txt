@@ -1,0 +1,40 @@
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnKeyListener;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MyAndroidAppActivity extends Activity {
+
+ EditText edittext;
+ Button button;
+
+ @Override
+ public void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.main);
+
+	addKeyListener();
+ }
+
+ public void addKeyListener() {
+
+	edittext = (EditText) findViewById(R.id.editText);
+
+        button = (Button) findViewById(R.id.button_new);
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(Textbox_UI.this,edittext.getText(), Toast.LENGTH_LONG).show();
+
+            }
+
+        });
+}
+}
+

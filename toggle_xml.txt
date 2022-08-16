@@ -1,0 +1,44 @@
+=============================
+File : res/layout/strings.xml
+=============================
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAndroidApp</string>
+    <string name="toggle_turn_on">Turn On</string>
+    <string name="toggle_turn_off">Turn Off</string>
+    <string name="btn_display">Display</string>
+</resources>
+
+
+==========================
+File : res/layout/main.xml
+==========================
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/toggle_turn_on"
+        android:textOff="@string/toggle_turn_off"
+        android:checked="true" />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_display" />
+
+</LinearLayout>
